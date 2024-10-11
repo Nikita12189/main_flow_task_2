@@ -1,0 +1,496 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Header and logo */
+header {
+    background-color: rgba(76, 175, 80, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    height: 70px;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown styles */
+nav ul li {
+    position: relative;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(76, 175, 80, 0.9);
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+nav ul .dropdown li {
+    width: 150px;
+}
+
+nav ul .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+
+nav ul .dropdown li a:hover {
+    background-color: rgba(69, 160, 73, 0.9);
+    transition: background-color 0.3s ease;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('farm-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.btn {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s ease;
+}
+
+/* About Section */
+.about-page {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E8B57;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dropdown {
+        position: static;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mission-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mission-img {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.mission-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* About Section (Our Story) */
+.about-section {
+    padding: 60px 20px;
+    background-image: url('our-story.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Produce section styles */
+/* Produce section styles */
+.produce-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.produce-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.produce-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Consistent image size for produce items */
+.produce-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produce-img {
+    width: 30%;
+    max-width: 300px;
+    height: 200px; /* Set a fixed height */
+    border-radius: 5px;
+    margin: 10px;
+    object-fit: cover; /* Ensure the image scales properly without distortion */
+}
+
+
+
+/* Self-Harvesting Section */
+.self-harvesting-section {
+    padding: 80px 20px;
+    background-color: #dff0d8; /* Light green */
+    color: #333; /* Darker text color for contrast */
+    text-align: center;
+}
+
+.self-harvesting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.harvest-text {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: light background for text */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.harvest-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.harvest-text p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.harvest-img {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.harvest-img img {
+    width: 30%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.harvest-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Farm Tours Section */
+.farm-tours-section {
+    padding: 60px 20px;
+    background: url('farm-tour-bg.jpg') no-repeat center center/cover;
+    color: #333;
+}
+
+.farm-tours-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Stack text above image */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tour-text {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.tour-img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.tour-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff; /* White background for contrast */
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-option {
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Light gray background for contact options */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-option h2 {
+    margin-top: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #2E8B57; /* Dark green footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form {
+        width: 90%; /* Responsive form width */
+    }
+}
